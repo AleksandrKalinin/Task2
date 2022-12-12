@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif; }
+
+.header {
+  padding: 20px 70px 30px 30px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.search {
+  position: relative; }
+  .search .search-input {
+    border: none;
+    outline: none;
+    width: 830px;
+    height: 44px;
+    background: #EBEBEB;
+    border-radius: 22px;
+    padding: 0 35px 0 23px; }
+  .search .search-icon {
+    position: absolute;
+    right: 13px;
+    top: 13px; }
+
+.logo {
+  margin-left: 28px;
+  margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .logo .logo-button {
+    margin-right: 4px; }
+  .logo .logo-text {
+    width: 100px;
+    height: 23px; }
+
+.top-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 175px;
+  margin-right: 45px;
+  margin-left: 505px; }
+  .top-navigation .top-navigation__item {
+    cursor: pointer; }
+
+.subscriptions-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 23px; }
+  .subscriptions-item .subscriptions-item__image {
+    margin-right: 10px; }
+  .subscriptions-item .subscriptions-item__text {
+    color: #898989;
+    margin: 0;
+    line-height: 20px;
+    font-size: 16px; }
+
+.categories-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 23px; }
+  .categories-item .categories-item__image {
+    margin-right: 10px; }
+  .categories-item .categories-item__text {
+    color: #898989;
+    margin: 0;
+    line-height: 20px;
+    font-size: 16px; }
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 576px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}
