@@ -57,6 +57,11 @@ body {
   .top-navigation .top-navigation__item {
     cursor: pointer; }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .subscriptions-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,6 +93,95 @@ body {
     margin: 0;
     line-height: 20px;
     font-size: 16px; }
+
+.content-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .content-main .content-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+
+.content-videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .content-videos .content-videos__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .content-videos .content-videos__wrapper .content-videos__item {
+      margin-right: 40px; }
+      .content-videos .content-videos__wrapper .content-videos__item .videos-description .videos-description__title {
+        margin: 8px 0 6px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #19202C; }
+      .content-videos .content-videos__wrapper .content-videos__item .videos-description .videos-description__text {
+        color: #C2C2C2;
+        font-size: 13px;
+        line-height: 16px;
+        margin: 0; }
+      .content-videos .content-videos__wrapper .content-videos__item .videos-image {
+        position: relative; }
+        .content-videos .content-videos__wrapper .content-videos__item .videos-image .videos-image__text {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          background: rgba(0, 0, 0, 0.3);
+          padding: 3px 10px 3px 8px;
+          font-size: 14px;
+          line-height: 18px;
+          color: #ffffff;
+          border-radius: 12px; }
+
+.content-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .content-navigation .nav-item {
+    margin-right: 40px; }
+    .content-navigation .nav-item .nav-item__link {
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+      text-decoration: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .content-navigation .nav-item.nav-item_active .nav-item__link {
+    color: #FF0000;
+    border-bottom: 2px solid #FF0000;
+    border-radius: 1px; }
+
+.recommended .recommended__title {
+  color: #C2C2C2;
+  font-size: 16px;
+  line-height: 20px; }
+
+.recommended .recommended-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px; }
+  .recommended .recommended-item .recommended-item__image {
+    margin-right: 20px;
+    height: 50px;
+    width: 50px; }
+  .recommended .recommended-item .recommended-item__name {
+    font-size: 18px;
+    line-height: 23px;
+    color: #19202C; }
 
 /*==========  Desktop First Method  ==========*/
 

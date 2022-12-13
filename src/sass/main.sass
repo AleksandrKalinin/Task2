@@ -45,6 +45,9 @@ body
 	.top-navigation__item
 		cursor: pointer	
 
+.main
+	display: flex
+
 .subscriptions-item
 	display: flex
 	align-items: center	
@@ -68,3 +71,78 @@ body
 		margin: 0
 		line-height: 20px
 		font-size: 16px		
+
+
+.content-main
+	display: flex
+	.content-navigation
+		display: flex
+		margin: 0
+		padding: 0
+		list-style: none
+
+.content-videos
+	display: flex
+	.content-videos__wrapper
+		display: flex
+		.content-videos__item
+			margin-right: 40px
+			.videos-description
+				.videos-description__title
+					margin: 8px 0 6px
+					font-size: 16px
+					line-height: 20px
+					color: #19202C
+				.videos-description__text
+					color: #C2C2C2
+					font-size: 13px
+					line-height: 16px
+					margin: 0	
+			.videos-image
+				position: relative
+				.videos-image__text
+					position: absolute
+					right: 10px
+					bottom: 10px
+					background: rgba(0, 0, 0, 0.3)	
+					padding: 3px 10px 3px 8px
+					font-size: 14px
+					line-height: 18px
+					color: #ffffff
+					border-radius: 12px
+
+.content-navigation
+	display: flex
+	align-items: center
+	.nav-item
+		margin-right: 40px
+		.nav-item__link
+			font-size: 18px
+			line-height: 23px
+			color: #000000
+			text-decoration: none
+			display: flex
+			align-items: center			
+	.nav-item.nav-item_active
+		.nav-item__link
+			color: #FF0000
+			border-bottom: 2px solid #FF0000
+			border-radius: 1px
+
+
+.recommended
+	.recommended__title
+		color: #C2C2C2
+		font-size: 16px
+		line-height: 20px		
+	.recommended-item
+		display: flex
+		margin-bottom: 30px
+		.recommended-item__image
+			margin-right: 20px
+			height: 50px
+			width: 50px
+		.recommended-item__name
+			font-size: 18px
+			line-height: 23px
+			color: #19202C			
