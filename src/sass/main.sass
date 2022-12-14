@@ -45,6 +45,12 @@ body
 	margin-left: 505px
 	.top-navigation__item
 		cursor: pointer	
+		transition: .1s all
+	.top-navigation__item:hover
+		transform: scale(1.04)
+
+.top-userpic
+	cursor: pointer		
 
 .main
 	display: flex
@@ -112,6 +118,7 @@ body
 		align-items: center	
 		margin-bottom: 23px
 		cursor: pointer
+		transition: .1s all
 		.subscriptions-item__image
 		 	margin-right: 10px	
 		.subscriptions-item__text
@@ -119,6 +126,9 @@ body
 			margin: 0
 			line-height: 20px
 			font-size: 16px
+	.subscriptions-item:hover
+		transform: translateX(5px)
+				
 
 .categories
 	width: 135px
@@ -127,6 +137,7 @@ body
 		align-items: center	
 		margin-bottom: 23px
 		cursor: pointer
+		transition: .1s all
 		.categories-item__image
 		 	margin-right: 17px	
 		.categories-item__text
@@ -138,7 +149,9 @@ body
 		.categories-item__text
 			color: #FF0000
 	.categories-item.categories-item_spaced
-		margin-bottom: 60px	
+		margin-bottom: 60px
+	.categories-item:hover
+		transform: translateX(5px)		
 
 .content-main
 	display: flex
@@ -221,7 +234,8 @@ body
 			align-items: center
 			transition: .1s all
 			border-bottom: 2px solid transparent
-		.nav-item__link:hover
+	.nav-item:not(:last-child):hover
+		.nav-item__link
 			color: #FF0000
 			border-bottom: 2px solid #FF0000
 			border-radius: 1px							
@@ -239,6 +253,8 @@ body
 	.recommended-item
 		display: flex
 		margin-bottom: 30px
+		transition: .1s all
+		cursor: pointer
 		.recommended-item__image
 			margin-right: 20px
 			height: 50px
@@ -246,4 +262,107 @@ body
 		.recommended-item__name
 			font-size: 18px
 			line-height: 23px
-			color: #19202C			
+			color: #19202C
+	.recommended-item:hover
+		transform: translateX(5px)
+							
+
+
+
+.videoplayer
+	display: flex
+	margin: 0 70px 0 80px
+	.videoplayer-playlist
+		margin-left: 40px
+	.playlist-header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0 0 25px 0
+		.playlist-header__title
+			font-size: 36px
+			line-height: 45px
+			color: #19202C
+			margin: 0		
+	.playlist-item
+		margin-bottom: 23px
+		.playlist-item__image
+			margin: 0 0 13px 0
+		.playlist-item__title
+			font-size: 26px
+			line-height: 33px
+			color: #19202C
+			margin: 0 0 10px 0
+		.playlist-item__text
+			display: flex
+			justify-content: space-between
+			font-size: 18px
+			line-height: 23px
+			color: #C2C2C2
+			margin: 0							 
+
+
+.toggle
+	display: flex
+	align-items: center
+	.switch-text
+		font-size: 16px
+		line-height: 20px
+		letter-spacing: 1px
+		text-transform: uppercase
+		color: #19202C		
+
+.switch 
+	position: relative
+	display: inline-block
+	width: 44px
+	height: 28px
+	margin-left: 11px
+
+
+/* Hide default HTML checkbox */
+.switch input 
+	opacity: 0
+	width: 0
+	height: 0
+
+
+/* The slider */
+.slider 
+	position: absolute
+	cursor: pointer
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: #F9F9F9
+	-webkit-transition: .4s
+	transition: .4s
+
+.slider:before 
+	position: absolute
+	content: ""
+	height: 24px
+	width: 24px
+	left: 2px
+	bottom: 2px
+	background-color: #CCCCCC
+	-webkit-transition: .4s
+	transition: .4s
+
+input:checked + .slider:before
+	background-color: #2196F3
+
+input:focus + .slider 
+	box-shadow: 0 0 1px #2196F3
+
+input:checked + .slider:before 
+	-webkit-transform: translateX(20px)
+	-ms-transform: translateX(20px)
+	transform: translateX(20px)
+
+.slider.round 
+	border-radius: 28px
+
+.slider.round:before 
+	border-radius: 50%
