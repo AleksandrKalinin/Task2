@@ -596,6 +596,129 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
+.slider-medium {
+  overflow: hidden;
+  padding: 50px 0; }
+  .slider-medium .slider-medium__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .slider-medium .slider-medium__wrapper .slider-medium__item {
+      margin-right: 40px;
+      cursor: pointer; }
+      .slider-medium .slider-medium__wrapper .slider-medium__item .slider-medium__thumbnail {
+        position: relative;
+        overflow: hidden;
+        border-radius: 14px; }
+        .slider-medium .slider-medium__wrapper .slider-medium__item .slider-medium__thumbnail .slider-medium__image {
+          -webkit-transition: .2s all;
+          -o-transition: .2s all;
+          transition: .2s all; }
+      .slider-medium .slider-medium__wrapper .slider-medium__item .medium-item__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #19202C;
+        margin: 10px 0 5px 0; }
+      .slider-medium .slider-medium__wrapper .slider-medium__item .medium-item__text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #C2C2C2;
+        margin: 0; }
+        .slider-medium .slider-medium__wrapper .slider-medium__item .medium-item__text .medium-text__wrapper {
+          width: 155px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+      .slider-medium .slider-medium__wrapper .slider-medium__item .slider-medium__duration {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 3px 9px;
+        background: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.3;
+        border-radius: 12px;
+        color: #ffffff; }
+    .slider-medium .slider-medium__wrapper .slider-medium__item:hover .slider-medium__thumbnail .slider-medium__image {
+      -webkit-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+      transform: scale(1.04); }
+
+.slider-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 150px;
+  margin: 0 0 30px 0;
+  position: relative; }
+  .slider-header .slider-header__image {
+    margin-right: 20px; }
+  .slider-header .slider-header__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: #19202C;
+    margin: 0; }
+  .slider-header .slider-header__text {
+    margin: 0 0 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2; }
+  .slider-header .slider-navigation {
+    right: 150px;
+    position: absolute;
+    width: 66px;
+    height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .slider-header .slider-navigation .slider-navigation__item {
+      height: 28px;
+      width: 28px;
+      border-radius: 50%;
+      background: #000000;
+      mix-blend-mode: normal;
+      opacity: 0.24;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      overflow: hidden; }
+      .slider-header .slider-navigation .slider-navigation__item img {
+        -webkit-transition: .1s all;
+        -o-transition: .1s all;
+        transition: .1s all; }
+    .slider-header .slider-navigation .slider-navigation__item:hover img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
