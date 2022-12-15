@@ -5,10 +5,12 @@ body
 	margin: 0
 	padding: 0
 	font-family: 'Mulish', sans-serif
+	background: #F2F2F2
+
 
 .header
 	padding: 20px 70px 30px 30px
-	background: white
+	background: transparent
 	display: flex
 	align-items: center
 
@@ -264,42 +266,157 @@ body
 			line-height: 23px
 			color: #19202C
 	.recommended-item:hover
-		transform: translateX(5px)
-							
+		transform: translateX(5px)						
 
 
 
 .videoplayer
 	display: flex
 	margin: 0 70px 0 80px
-	.videoplayer-playlist
-		margin-left: 40px
-	.playlist-header
+	.videoplayer-title
+		font-weight: 700
+		font-size: 36px
+		line-height: 45px
+		color: #192646	
+		margin: 20px 0 14px 0
+	.videoplayer-navigation	
+		.videoplayer-navigation__wrapper
+			display: flex
+			align-items: center
+		.videoplayer-navigation__text
+			font-weight: 400
+			font-size: 20px
+			line-height: 25px
+			color: #C2C2C2
+		.videoplayer-buttons
+			width: 320px
+			display: flex
+			align-items: center
+			justify-content: space-between	
+			.video-button
+				display: flex
+				align-items: center
+				justify-content: space-between
+				width: 100px
+				height: 40px
+				border-radius: 20px
+				background: #EBEBEB
+				text-decoration: none
+				padding: 10px 20px
+				font-size: 16px
+				line-height: 20px
+				color: #192646
+				transition: .2s all
+			.video-button:hover
+				background: #FF0000
+				color: #fff	
+				img
+					-webkit-filter: brightness(0) invert(1)
+					filter: brightness(0) invert(1)					
+		.videoplayer-more
+			text-decoration: none
+			margin-left: 40px
+	.videoplayer-summary
 		display: flex
 		justify-content: space-between
-		align-items: center
-		margin: 0 0 25px 0
-		.playlist-header__title
-			font-size: 36px
-			line-height: 45px
-			color: #19202C
-			margin: 0		
-	.playlist-item
-		margin-bottom: 23px
-		.playlist-item__image
-			margin: 0 0 13px 0
-		.playlist-item__title
-			font-size: 26px
-			line-height: 33px
-			color: #19202C
-			margin: 0 0 10px 0
-		.playlist-item__text
+		padding: 38px 0 48px
+		.videoplayer-description
+			display: flex
+			.videoplayer-description__text
+				width: 820px
+				margin-left: 12px
+				.videoplayer-description__category
+					margin: 0 0 4px 0 
+					font-weight: 700
+					font-size: 26px
+					line-height: 33px
+					color: #19202C
+				.videoplayer-description__date
+					font-weight: 400
+					font-size: 13px
+					line-height: 16px
+					color: #C2C2C2					
+				.videoplayer-description__summary
+					margin: 14px 0
+					font-size: 16px
+					line-height: 22px
+					color: #000000
+					mix-blend-mode: normal
+					opacity: 0.6
+				.videoplayer-description__more
+					font-weight: 400
+					font-size: 20px
+					line-height: 25px
+					color: #C2C2C2	
+					cursor: pointer
+					transform: .1s all
+				.videoplayer-description__more:hover
+					text-decoration: underline					
+		.videoplayer-button
+			background: #FF0000
+			padding: 10px 20px			
+			border-radius: 20px
+			color: #fff
+			text-decoration: none
+			cursor: pointer
+			transition: .2s ease
+			align-self: start
+		.videoplayer-button:hover
+			background: #FF3838
+			color: #ffffff																								
+
+
+	
+	.videoplayer-playlist
+		margin-left: 40px
+		max-height: 1100px
+		overflow: hidden
+		.playlist-header
 			display: flex
 			justify-content: space-between
-			font-size: 18px
-			line-height: 23px
-			color: #C2C2C2
-			margin: 0							 
+			align-items: center
+			margin: 0 0 25px 0
+			.playlist-header__title
+				font-size: 36px
+				line-height: 45px
+				color: #19202C
+				margin: 0		
+		.playlist-item
+			margin-bottom: 23px
+			.playlist-item__image
+				margin: 0
+				position: relative
+				vertical-align: top
+				.playlist-image__item
+					display: block				
+				.playlist-item__duration
+					position: absolute
+					right: 10px
+					bottom: 10px
+					background: #000000
+					opacity: 0.3
+					border-radius: 12px	
+					padding: 3px 10px 3px 8px
+					font-size: 14px
+					line-height: 18px
+					text-align: right
+					color: #FFFFFF							
+			.playlist-item__title
+				font-size: 26px
+				line-height: 33px
+				color: #19202C
+				margin: 14px 0 11px 0
+			.playlist-item__text
+				display: flex
+				justify-content: space-between
+				font-size: 18px
+				line-height: 23px
+				color: #C2C2C2
+				margin: 0							 
+
+.videoplayer-navigation
+	display: flex
+	justify-content: space-between
 
 
 .toggle
