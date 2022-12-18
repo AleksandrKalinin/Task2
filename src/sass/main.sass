@@ -7,12 +7,22 @@ body
 	font-family: 'Mulish', sans-serif
 	background: #F2F2F2
 
-
 .header
 	padding: 20px 70px 30px 30px
 	background: transparent
 	display: flex
 	align-items: center
+	.mobile-nav
+		display: none
+	.mobile-title
+		font-size: 16px
+		line-height: 20px
+		font-weight: 700
+		margin-left: 5px	
+		display: none	
+
+.section-home
+	padding-top: 20px
 
 .search
 	position: relative
@@ -46,8 +56,22 @@ body
 	margin-right: 45px
 	margin-left: 505px
 	.top-navigation__item
+		position: relative
 		cursor: pointer	
 		transition: .1s all
+		.top-navigation__alert
+			font-size: 12px
+			width: 18px
+			height: 18px
+			border-radius: 50%
+			background: #FF0000
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #FFFFFF
+			position: absolute
+			top: -5px
+			left: 50%
 	.top-navigation__item:hover
 		transform: scale(1.04)
 
@@ -60,7 +84,7 @@ body
 	position: relative
 
 .content
-	margin: 0 60px 0 65px
+	margin: 0 70px 0 65px
 	width: 1598px
 	.content-top
 		.content-top__image
@@ -70,15 +94,17 @@ body
 
 .content-header
 	margin: 30px 0 20px 0
-	width: 100%
+	width: calc(100% - 70px)
 	display: flex
-	align-items: center
+	align-items: flex-start
 	justify-content: space-between
 	.content-info
 		display: flex
 		align-items: center
 		.info-userpic
 			margin-right: 14px
+		.info-description
+			padding: 15px 0
 		.info-description__title
 			font-size: 26px
 			line-height: 33px
@@ -88,6 +114,7 @@ body
 			font-size: 13px
 			line-height: 16px
 			color: #C2C2C2
+			margin: 0
 	.content-subscribe
 		display: flex
 		.content-subscribe__icon
@@ -108,12 +135,19 @@ body
 
 .sidebar
 	margin-left: 32px
-	padding:  0 0 40px 0
+	padding:  20px 0 40px 0
 	display: flex
 	flex-direction: column
 	justify-content: space-between
+
 .subscriptions
 	width: 160px
+	.subscriptions-header
+		font-size: 18px		
+		line-height: 23px
+		margin: 0 0 30px 0
+		font-weight: 700
+
 	.subscriptions-item
 		display: flex
 		align-items: center	
@@ -136,7 +170,7 @@ body
 	.categories-item
 		display: flex
 		align-items: center	
-		margin-bottom: 23px
+		margin-bottom: 29px
 		cursor: pointer
 		transition: .1s all
 		.categories-item__image
@@ -165,14 +199,18 @@ body
 .content-player
 	display: flex
 	margin: 60px 205px 60px 0
+	.player-image
+		.player-image__pic
+			display: block
 	.player-description
-		padding-left: 32px
 		width: 580px
+		padding: 17px 0 15px 32px
 		.player-title
-			margin: 10px 0
+			margin: 0 0 10px 0
 			font-size: 26px
 			line-height: 34px
 			color: #19202C
+			max-width: 430px
 		.player-text
 			margin: 0 0 30px 0
 			font-size: 16px
@@ -180,10 +218,12 @@ body
 			color: #000000
 			mix-blend-mode: normal
 			opacity: 0.6
+
 		.player-info
 			font-size: 16px
 			line-height: 22px
 			color: #C2C2C2
+			margin: 0
 
 .content-videos
 	width: 100%
@@ -234,7 +274,7 @@ body
 	display: flex
 	align-items: center
 	.nav-item
-		margin-right: 40px
+		margin-right: 70px
 		.nav-item__link
 			font-size: 18px
 			line-height: 23px
@@ -255,20 +295,22 @@ body
 			border-bottom: 2px solid #FF0000
 			border-radius: 1px
 	.nav-item.nav-item_more
-		display: none
-				
+		display: none			
 
 
 .recommended
 	.recommended__title
 		color: #C2C2C2
 		font-size: 16px
-		line-height: 20px		
+		line-height: 20px	
+		margin: 0 0 30px 0
+		font-weight: 400	
 	.recommended-item
 		display: flex
 		margin-bottom: 30px
 		transition: .1s all
 		cursor: pointer
+		align-items: center
 		.recommended-item__image
 			margin-right: 20px
 			height: 50px
@@ -276,7 +318,9 @@ body
 		.recommended-item__name
 			font-size: 18px
 			line-height: 23px
+			font-weight: 700
 			color: #19202C
+			margin: 0
 	.recommended-item:hover
 		transform: translateX(5px)
 
@@ -284,13 +328,20 @@ body
 .videoplayer
 	display: flex
 	margin: 0 53px 0 80px
+	.videoplayer-main
+		.videoplayer-img__item
+			display: block
 	.videoplayer-title
 		font-weight: 700
 		font-size: 36px
 		line-height: 45px
 		color: #192646	
-		margin: 20px 0 14px 0
+		margin: 20px 0 4px 0
 	.videoplayer-navigation	
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		padding-bottom: 15px
 		.videoplayer-navigation__wrapper
 			display: flex
 			align-items: center
@@ -319,15 +370,15 @@ body
 				color: #192646
 				transition: .2s all
 				&:hover
-					background: #D8D8D8	
-			
+					background: #D8D8D8				
 		.videoplayer-more
 			text-decoration: none
 			margin-left: 40px
 	.videoplayer-summary
+		border-top: 1px solid rgba(216, 216, 216, 0.5)
 		display: flex
 		justify-content: space-between
-		padding: 38px 0 48px
+		padding: 37px 0 48px
 		.videoplayer-description
 			display: flex
 			.videoplayer-description__text
@@ -410,12 +461,14 @@ body
 					font-size: 14px
 					line-height: 18px
 					text-align: right
-					color: #FFFFFF							
+					color: #FFFFFF
+			.playlist-item__description
+				margin-top: 13px									
 			.playlist-item__title
 				font-size: 26px
 				line-height: 33px
 				color: #19202C
-				margin: 14px 0 11px 0
+				margin: 0 0 11px 0
 			.playlist-item__text
 				display: flex
 				justify-content: space-between
@@ -423,11 +476,6 @@ body
 				line-height: 23px
 				color: #C2C2C2
 				margin: 0							 
-
-.videoplayer-navigation
-	display: flex
-	justify-content: space-between
-
 
 .toggle
 	display: flex
@@ -446,15 +494,11 @@ body
 	height: 28px
 	margin-left: 11px
 
-
-/* Hide default HTML checkbox */
 .switch input 
 	opacity: 0
 	width: 0
 	height: 0
 
-
-/* The slider */
 .slider 
 	position: absolute
 	cursor: pointer
@@ -533,6 +577,7 @@ input:checked + .slider:before
 					color: #ffffff
 					border-radius: 12px
 				.gallery-small__image
+					display: block
 					transition: .1s all
 					object-fit: cover
 			&:hover
@@ -572,6 +617,7 @@ input:checked + .slider:before
 					display: flex
 					justify-content: space-between
 					align-items: center
+					margin: 0
 			.gallery-medium__duration
 				position: absolute
 				bottom: 10px
@@ -587,7 +633,7 @@ input:checked + .slider:before
 
 .gallery-header
 	display: flex
-	align-items: center
+	align-items: flex-end
 	padding-right: 150px
 	margin: 0 0 30px 0 
 	position: relative
@@ -600,7 +646,11 @@ input:checked + .slider:before
 		.gallery-navigation
 			margin-left: 40px 	
 	.gallery-header__image
-		margin-right: 20px 
+		margin-right: 20px
+	.gallery-header__image.gallery-img_small
+		width: 50px
+		height: 50px	
+
 	.gallery-header__title
 		font-weight: 700
 		font-size: 26px
