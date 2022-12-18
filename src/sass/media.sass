@@ -1,3 +1,5 @@
+$red-color: #FF0000
+
 @media only screen and (max-width : 1920px)
 
 	.videoplayer
@@ -111,6 +113,9 @@
 		width: calc(100% - 192px)
 		margin: 0
 
+	.videoplayer-controls__item
+		transform: scale(1)
+
 @media only screen and (max-width : 992px)
 
 	.videoplayer
@@ -218,6 +223,41 @@
 	body
 		background: #F2F2F2
 
+	.videoplayer
+		.videoplayer-main
+			.videoplayer-img
+				.videoplayer-navigation
+					bottom: 8px
+					background: transparent
+					padding: 0 6px 8px 6px
+					height: 30px
+					display: flex
+					align-items: center
+					.videoplayer-progress
+						display: flex
+						justify-content: center
+						padding: 5px 18px
+						background: rgba(0, 0, 0, 0.2)
+						mix-blend-mode: normal
+						border-radius: 10px
+						.videoplayer-progress__image
+							align-self: center
+							width: calc(100% - 165px)
+						.videoplayer-progress_left,
+						.videoplayer-progress_right
+							display: flex
+							color: #ffffff
+							cursor: pointer	
+						.videoplayer-progress_left 
+							.videoplayer-progress__control	
+								margin-right: 14px
+						.videoplayer-progress_right 
+							.videoplayer-progress__control
+								margin-left: 14px									
+					.videoplayer-time
+						display: none
+					.videoplayer-controls
+						display: none	
 
 @media only screen and (max-width : 576px)
 
@@ -246,7 +286,7 @@
 				line-height: 20px			
 				padding: 0
 				background: transparent
-				color: #FF0000
+				color: $red-color
 				.videoplayer-button__count
 					display: none
 			.videoplayer-description	
@@ -382,6 +422,7 @@
 	.header.header-video
 		.top-userpic
 			display: none
+
 	.header
 		.header_right
 			display: flex
@@ -455,7 +496,6 @@
 					height: auto
 					min-width: 288px
 					min-height: 150px
-
 
 @media only screen and (max-width : 320px)
 	.videoplayer

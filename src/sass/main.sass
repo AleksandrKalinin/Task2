@@ -1,3 +1,5 @@
+$red-color: #FF0000
+
 *
 	box-sizing: border-box
 
@@ -64,7 +66,7 @@ body
 			width: 18px
 			height: 18px
 			border-radius: 50%
-			background: #FF0000
+			background: $red-color
 			display: flex
 			justify-content: center
 			align-items: center
@@ -120,7 +122,6 @@ body
 		.content-subscribe__icon
 			align-self: center
 			margin-right: 20px
-
 
 .sidebar-settings
 	display: flex
@@ -182,7 +183,7 @@ body
 			font-size: 16px	
 	.categories-item.categories-item_active
 		.categories-item__text
-			color: #FF0000
+			color: $red-color
 	.categories-item.categories-item_spaced
 		margin-bottom: 60px
 	.categories-item:hover
@@ -218,57 +219,11 @@ body
 			color: #000000
 			mix-blend-mode: normal
 			opacity: 0.6
-
 		.player-info
 			font-size: 16px
 			line-height: 22px
 			color: #C2C2C2
 			margin: 0
-
-.content-videos
-	width: 100%
-	overflow: hidden
-	.content-videos__wrapper
-		display: flex
-		.content-videos__title
-			font-size: 26px
-			line-height: 33px
-			color: #19202C
-			margin: 0 0 30px 0
-		.content-videos__item:hover
-			.videos-image__pic
-				transform: scale(1.1)
-		.content-videos__item
-			margin-right: 40px	
-			cursor: pointer		
-			.videos-description
-				padding-bottom: 4px
-				.videos-description__title
-					margin: 8px 0 6px
-					font-size: 16px
-					line-height: 20px
-					color: #19202C
-				.videos-description__text
-					color: #C2C2C2
-					font-size: 13px
-					line-height: 16px
-					margin: 0	
-			.videos-image
-				position: relative
-				overflow: hidden
-				border-radius: 14px
-				.videos-image__text
-					position: absolute
-					right: 10px
-					bottom: 10px
-					background: rgba(0, 0, 0, 0.3)	
-					padding: 3px 10px 3px 8px
-					font-size: 14px
-					line-height: 18px
-					color: #ffffff
-					border-radius: 12px
-				.videos-image__pic
-					transition: .1s all	
 
 .content-navigation
 	display: flex
@@ -286,13 +241,13 @@ body
 			border-bottom: 2px solid transparent
 	.nav-item:not(:last-child):hover
 		.nav-item__link
-			color: #FF0000
-			border-bottom: 2px solid #FF0000
+			color: $red-color
+			border-bottom: 2px solid $red-color
 			border-radius: 1px							
 	.nav-item.nav-item_active
 		.nav-item__link
-			color: #FF0000
-			border-bottom: 2px solid #FF0000
+			color: $red-color
+			border-bottom: 2px solid $red-color
 			border-radius: 1px
 	.nav-item.nav-item_more
 		display: none			
@@ -329,6 +284,49 @@ body
 	display: flex
 	margin: 0 53px 0 80px
 	.videoplayer-main
+		.videoplayer-img
+			position: relative
+			.videoplayer-navigation
+				width: 100%
+				position: absolute
+				bottom: 0
+				left: 0
+				display: flex
+				flex-direction: column
+				padding: 0 33px 20px 33px
+				.videoplayer-time
+					width: 100%
+					display: flex
+					justify-content: space-between
+					color: white
+					font-size: 22px
+					line-height: 28px					
+				.videoplayer-progress
+					width: 100%
+					padding: 20px 0
+					.videoplayer-progress_left,
+					.videoplayer-progress_right
+						display: none
+					.videoplayer-progress__image
+						width: 100%
+						object-fit: cover
+						padding: 0 6px
+				.videoplayer-controls
+					width: 100%
+					display: flex
+					justify-content: space-between
+					.videoplayer-controls_left,
+					.videoplayer-controls_right
+						display: flex
+						align-items: center
+					.videoplayer-controls__item
+						cursor: pointer	
+					.videoplayer-controls_left
+						.videoplayer-controls__item:not(:last-child)
+							margin-right: 40px
+					.videoplayer-controls_right
+						.videoplayer-controls__item:not(:last-child)
+							margin-right: 27px									
 		.videoplayer-img__item
 			display: block
 	.videoplayer-title
@@ -416,7 +414,7 @@ body
 					text-decoration: underline					
 		.videoplayer-button
 			flex-shrink: 0
-			background: #FF0000
+			background: $red-color
 			padding: 10px 20px			
 			border-radius: 20px
 			color: #fff
@@ -681,12 +679,12 @@ input:checked + .slider:before
 			img
 				transition: .1s all
 		.gallery-navigation__item:hover
-			background: #FF0000
+			background: $red-color
 			img
 				transform: scale(1.1)			
 
 .button-regular
-	background: #FF0000
+	background: $red-color
 	padding: 10px 20px			
 	border-radius: 20px
 	color: #fff
