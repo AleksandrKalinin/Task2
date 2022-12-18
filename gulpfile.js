@@ -20,7 +20,8 @@ const jsFiles = [
 ]
 
 const sassFiles = [
-	'./src/sass/main.sass'
+	'./src/sass/main.sass',
+	'./src/sass/media.sass'
 ]
 
 function compile(){

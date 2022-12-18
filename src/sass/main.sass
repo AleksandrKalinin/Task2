@@ -57,10 +57,16 @@ body
 .main
 	display: flex
 	width: 100%
+	position: relative
 
 .content
 	margin: 0 60px 0 65px
 	width: 1598px
+	.content-top
+		.content-top__image
+			width: 100%
+			min-height: 100px
+			display: block
 
 .content-header
 	margin: 30px 0 20px 0
@@ -87,17 +93,7 @@ body
 		.content-subscribe__icon
 			align-self: center
 			margin-right: 20px
-		.content-subscribe__button
-			background: #FF0000
-			padding: 10px 20px			
-			border-radius: 20px
-			color: #fff
-			text-decoration: none
-			cursor: pointer
-			transition: .2s ease
-		.content-subscribe__button:hover
-			background: #FF3838
-			color: #ffffff		
+
 
 .sidebar-settings
 	display: flex
@@ -112,7 +108,10 @@ body
 
 .sidebar
 	margin-left: 32px
-
+	padding:  0 0 40px 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
 .subscriptions
 	width: 160px
 	.subscriptions-item
@@ -196,9 +195,14 @@ body
 			line-height: 33px
 			color: #19202C
 			margin: 0 0 30px 0
+		.content-videos__item:hover
+			.videos-image__pic
+				transform: scale(1.1)
 		.content-videos__item
-			margin-right: 40px
+			margin-right: 40px	
+			cursor: pointer		
 			.videos-description
+				padding-bottom: 4px
 				.videos-description__title
 					margin: 8px 0 6px
 					font-size: 16px
@@ -211,6 +215,8 @@ body
 					margin: 0	
 			.videos-image
 				position: relative
+				overflow: hidden
+				border-radius: 14px
 				.videos-image__text
 					position: absolute
 					right: 10px
@@ -221,6 +227,8 @@ body
 					line-height: 18px
 					color: #ffffff
 					border-radius: 12px
+				.videos-image__pic
+					transition: .1s all	
 
 .content-navigation
 	display: flex
@@ -246,6 +254,10 @@ body
 			color: #FF0000
 			border-bottom: 2px solid #FF0000
 			border-radius: 1px
+	.nav-item.nav-item_more
+		display: none
+				
+
 
 .recommended
 	.recommended__title
@@ -266,13 +278,12 @@ body
 			line-height: 23px
 			color: #19202C
 	.recommended-item:hover
-		transform: translateX(5px)						
-
+		transform: translateX(5px)
 
 
 .videoplayer
 	display: flex
-	margin: 0 70px 0 80px
+	margin: 0 53px 0 80px
 	.videoplayer-title
 		font-weight: 700
 		font-size: 36px
@@ -307,12 +318,9 @@ body
 				line-height: 20px
 				color: #192646
 				transition: .2s all
-			.video-button:hover
-				background: #FF0000
-				color: #fff	
-				img
-					-webkit-filter: brightness(0) invert(1)
-					filter: brightness(0) invert(1)					
+				&:hover
+					background: #D8D8D8	
+			
 		.videoplayer-more
 			text-decoration: none
 			margin-left: 40px
@@ -331,11 +339,14 @@ body
 					font-size: 26px
 					line-height: 33px
 					color: #19202C
-				.videoplayer-description__date
+				.videoplayer-description__date,
+				.videoplayer-description__views
 					font-weight: 400
 					font-size: 13px
 					line-height: 16px
-					color: #C2C2C2					
+					color: #C2C2C2	
+				.videoplayer-description__views
+					display: none
 				.videoplayer-description__summary
 					margin: 14px 0
 					font-size: 16px
@@ -353,6 +364,7 @@ body
 				.videoplayer-description__more:hover
 					text-decoration: underline					
 		.videoplayer-button
+			flex-shrink: 0
 			background: #FF0000
 			padding: 10px 20px			
 			border-radius: 20px
@@ -363,9 +375,7 @@ body
 			align-self: start
 		.videoplayer-button:hover
 			background: #FF3838
-			color: #ffffff																								
-
-
+			color: #ffffff
 	
 	.videoplayer-playlist
 		margin-left: 40px
@@ -485,19 +495,63 @@ input:checked + .slider:before
 	border-radius: 50%
 
 
-.slider-medium
+.gallery-small
+	width: 100%
 	overflow: hidden
-	padding: 50px 0
-	.slider-medium__wrapper
+	.gallery-small__wrapper
 		display: flex
-		.slider-medium__item
-			margin-right: 40px
-			cursor: pointer
-			.slider-medium__thumbnail
+		.gallery-small__item
+			margin-right: 40px	
+			cursor: pointer		
+			.gallery-small__description
+				padding-bottom: 4px
+				.small-item__title
+					font-weight: 700
+					margin: 8px 0 6px
+					font-size: 16px
+					line-height: 20px
+					color: #19202C
+				.small-item__text
+					display: flex
+					justify-content: space-between
+					color: #C2C2C2
+					font-size: 13px
+					line-height: 16px
+					margin: 0	
+			.gallery-small__thumbnail
 				position: relative
 				overflow: hidden
 				border-radius: 14px
-				.slider-medium__image
+				.gallery-small__duration
+					position: absolute
+					right: 10px
+					bottom: 10px
+					background: rgba(0, 0, 0, 0.3)	
+					padding: 3px 10px 3px 8px
+					font-size: 14px
+					line-height: 18px
+					color: #ffffff
+					border-radius: 12px
+				.gallery-small__image
+					transition: .1s all
+					object-fit: cover
+			&:hover
+				.gallery-small__image
+					transform: scale(1.04)
+
+.gallery-medium
+	overflow: hidden
+	padding: 50px 0
+	.gallery-medium__wrapper
+		display: flex
+		.gallery-medium__item
+			margin-right: 40px
+			cursor: pointer
+			.gallery-medium__thumbnail
+				position: relative
+				overflow: hidden
+				border-radius: 14px
+				.gallery-medium__image
 					transition: .2s all
 			.medium-item__title
 				font-weight: 700
@@ -518,7 +572,7 @@ input:checked + .slider:before
 					display: flex
 					justify-content: space-between
 					align-items: center
-			.slider-medium__duration
+			.gallery-medium__duration
 				position: absolute
 				bottom: 10px
 				right: 10px
@@ -528,49 +582,68 @@ input:checked + .slider:before
 				opacity: 0.3
 				border-radius: 12px		
 				color: #ffffff
-		.slider-medium__item:hover .slider-medium__thumbnail .slider-medium__image	
-			transform: scale(1.04)		 		
+			&:hover .gallery-medium__thumbnail .gallery-medium__image	
+				transform: scale(1.04)		 		
 
-.slider-header
+.gallery-header
 	display: flex
 	align-items: center
 	padding-right: 150px
 	margin: 0 0 30px 0 
 	position: relative
-	.slider-header__image
+	justify-content: space-between
+	.gallery-header_right, 
+	.gallery-header_left
+		display: flex
+		align-items: center
+	.gallery-header_right
+		.gallery-navigation
+			margin-left: 40px 	
+	.gallery-header__image
 		margin-right: 20px 
-	.slider-header__title
+	.gallery-header__title
 		font-weight: 700
 		font-size: 26px
 		line-height: 33px
 		color: #19202C
 		margin: 0
-	.slider-header__text
+	.gallery-header__text
 		margin: 0 0 0 20px 
 		font-weight: 400
 		font-size: 16px
-		line-height: 20px
+		line-height: 24px
 		color: #C2C2C2				
-	.slider-navigation
-		right: 150px 
-		position: absolute
+	.gallery-navigation
 		width: 66px
 		height: 28px
 		display: flex
 		justify-content: space-between	
-		.slider-navigation__item
+		.gallery-navigation__item
 			height: 28px
 			width: 28px
 			border-radius: 50%
-			background: #000000
-			mix-blend-mode: normal
-			opacity: 0.24 
+			background: #B7B7B7
 			display: flex
 			align-items: center
 			justify-content: center
 			overflow: hidden
+			transition: .1s all
 			img
 				transition: .1s all
-		.slider-navigation__item:hover
+		.gallery-navigation__item:hover
+			background: #FF0000
 			img
 				transform: scale(1.1)			
+
+.button-regular
+	background: #FF0000
+	padding: 10px 20px			
+	border-radius: 20px
+	color: #fff
+	text-decoration: none
+	cursor: pointer
+	transition: .2s ease
+	&:hover
+		background: #CD0000
+		color: #ffffff		
+

@@ -1,0 +1,392 @@
+@media only screen and (max-width : 1920px)
+
+	.videoplayer
+		.videoplayer__main
+			max-width: 1363px
+			width: calc(100% - 394px)
+			overflow: hidden
+			.videoplayer-img
+				width: 100%
+				.videoplayer-img__item
+					width: 100%
+					height: auto
+					object-fit: cover
+
+	.content-player
+		margin: 60px 205px 60px 0
+		max-width: 1120px
+		.content-player__image
+			width: 540px
+			overflow: hidden
+			.player-image__pic
+				width: 100%
+				height: auto
+				object-fit: cover
+		.content-player__description
+			width: calc(100% - 572px)
+
+	.top-navigation
+		margin-left: calc(100% - 1298px)
+
+	.content
+		width: calc(100% - 305px)
+
+@media only screen and (max-width: 1600px)
+	.videoplayer
+		.videoplayer-summary
+			.videoplayer-description
+				.videoplayer-description__text
+					max-width: 820px
+					width: calc(100%)
+
+@media only screen and (max-width : 1440px)
+
+	.content-player
+		margin: 60px 60px 60px 0
+		.content-player__image
+			width: 340px
+		.content-player__description
+			width: calc(100% - 372px)
+
+	.gallery-header
+		padding: 0
+		.gallery-header_right
+			.gallery-navigation
+				margin-left: 20px
+
+	.search
+		.search-input
+			width: 600px
+
+	.top-navigation
+		margin-left: calc(100% - 1068px)
+
+@media only screen and (max-width : 1200px)
+
+	.videoplayer
+		margin: 0 30px
+
+	.recommended
+		display: none
+
+	.content-main
+		width: 100%
+
+	.content-header
+		padding: 0 20px
+
+	.content-player
+		width: 100%
+		padding: 0 20px
+		flex-direction: column
+		align-items: center
+		margin: 60px auto
+		.content-player__image
+			width: 100%
+		.content-player__description
+			width: 100%
+			padding: 20px 0
+
+	.header
+		padding: 20px 30px 30px 30px
+
+	.top-navigation
+		margin-left: calc(100% - 668px)	
+		margin-right: 20px
+		width: 100px
+
+	.search
+		.search-input
+			width: 300px
+
+	.content
+		width: calc(100% - 192px)
+		margin: 0
+
+@media only screen and (max-width : 992px)
+
+	.videoplayer
+		flex-direction: column
+		.videoplayer__main
+			width: 100%
+		.videoplayer__playlist
+			margin: 0
+			max-width: 367px	
+
+	.gallery-small
+		.gallery-small__wrapper
+			width: 100%
+			flex-wrap: wrap
+			justify-content: space-around
+			.gallery-small__item
+				margin: 0 0 30px 0
+				margin-right: 0
+
+	.gallery-medium
+		.gallery-medium__wrapper
+			width: 100%
+			flex-wrap: wrap
+			justify-content: space-around
+			.gallery-medium__item
+				margin: 0 0 30px 0
+				width: 500px
+
+	.gallery-header
+		padding: 0
+		justify-content: space-between
+		.gallery-navigation
+			display: none	
+		.gallery-header__text
+			display: none	
+
+	.content-main
+		.content-navigation
+			display: flex
+			padding: 0 16px 16px 
+			margin: 0 auto
+			.nav-item
+				.nav-item__link
+					font-size: 14px
+					line-height: 18px
+			.nav-item.nav-item_more
+				display: flex		
+		.content-navigation .nav-item:nth-child(n+5):nth-last-child(n+1)	
+			background: red
+			display: none	
+
+@media only screen and (max-width : 768px)
+
+	.content__header
+		flex-direction: column
+		align-items: flex-start
+		.content-info
+			flex-direction: column
+			align-items: flex-start
+		.content-subscribe	
+			.content-subscribe__icon
+				display: none	
+
+	.header
+		padding: 10px 16px 20px
+		width: 100%
+		justify-content: space-between
+		.logo
+			margin: 0
+
+	.menu
+		display: none
+
+	.gallery-medium
+		padding: 20px
+		width: 100%
+		.gallery-medium__wrapper
+			width: 100%
+			.gallery-medium__item
+				width: 100%
+				.gallery-medium__thumbnail
+					width: 100%
+					.gallery-medium__image
+						height: 100%
+						width: 100%
+						object-fit: cover
+						object-position: center
+
+
+	.gallery-header__image
+		width: 40px
+		height: 40px
+
+	.gallery-header
+		.gallery-header__title
+			font-size: 18px	
+
+	.top-navigation
+		display: none
+
+	.search
+		display: none	
+
+	body
+		background: #F2F2F2
+
+
+@media only screen and (max-width : 576px)
+
+	body
+		background: #FFFFFF
+
+	.videoplayer
+		.videoplayer-info
+			.videoplayer-title
+				font-size: 20px
+				line-height: 25px
+		.videoplayer-summary
+			.videoplayer-button
+				font-size: 16px
+				line-height: 20px			
+				padding: 0
+				background: transparent
+				color: #FF0000
+				.videoplayer-button__count
+					display: none
+			.videoplayer-description	
+				.videoplayer-description__date
+					display: none
+				.videoplayer-description__more
+					display: none
+				.videoplayer-description__image
+					height: 50px
+					width: 50px
+				.videoplayer-description__text
+					.videoplayer-description__views
+						display: flex
+						font-size: 12px
+						line-height: 15px					
+					.videoplayer-description__summary
+						display: none	
+					.videoplayer-description__category
+						font-size: 16px
+						line-height: 20px				
+		.videoplayer-navigation
+			flex-direction: column
+			.videoplayer-navigation__text
+				font-size: 12px
+				line-height: 15px
+			.videoplayer-navigation__buttons
+				margin-top: 20px
+				.video-button
+					margin-right: 10px
+		.videoplayer-more
+			display: none												
+
+	.content-header
+		padding: 0 16px
+		margin: 0
+		transform: translateY(-40px)
+
+	.content
+		width: 100%
+		padding-bottom: 60px
+		.content-player
+			display: none
+	.content-main
+		justify-content: center
+		.content-wrapper
+			overflow: hidden
+
+	.gallery-header
+		display: none
+
+	.gallery-small__wrapper, .gallery-medium__wrapper
+		flex-direction: column	
+
+	.gallery-small 
+		width: 288px
+		margin: 0 auto
+		.gallery-small__wrapper 
+			.gallery-small__item
+				margin: 0 0 30px 0
+				margin-right: 0
+				.gallery-small__thumbnail
+					height: 150px
+					width: 100% 
+					.gallery-small__image
+						height: auto
+						width: 100%
+
+	.gallery-medium
+		width: 288px
+		margin: 0 auto
+		padding: 0
+		.gallery-medium__wrapper 
+			.gallery-medium__item
+				margin: 0 0 30px 0
+				margin-right: 0
+				.gallery-medium__thumbnail
+					height: 150px
+					width: 100% 
+					.gallery-medium__image
+						height: 100%
+						width: auto					
+
+	 .header
+		display: none	
+	
+	.sidebar
+		justify-content: center	
+		background: #FFFFFF
+		border-top: 1px solid #F1F1F1
+		position: fixed
+		bottom: 0
+		left: 0	
+		z-index: 1	
+		width: 100%
+		height: 60px
+		margin: 0
+		padding: 0
+		.sidebar__wrapper
+			overflow: auto
+			.sidebar__categories
+				width: 100%
+				margin: 0
+				display: flex
+				flex-direction: row
+				.categories__item				
+					flex-direction: column
+					justify-content: space-between	
+					width: auto	
+					margin: 0
+					width: 100px
+					min-width: 25%	
+					height: 37px
+					.categories-item__image
+						margin: 0
+					.categories-item__text
+						font-size: 10px
+						line-height: 13px						
+	.sidebar__subscriptions
+		display: none	
+	.sidebar-settings
+		display: none				
+
+
+
+@media only screen and (max-width : 480px)
+
+	.toggle
+		.switch-text
+			font-size: 10px
+			line-height: 13px			
+
+	.videoplayer
+		margin: 0 16px
+		.videoplayer__playlist
+			margin: 0
+			width: 100%
+			.playlist-header
+				.playlist-header__title
+					font-size: 20px
+					line-height: 25px			
+			.playlist-item
+				.playlist-item__views,
+				.playlist-item__author
+					font-size: 13px
+					line-height: 16px
+				.playlist-item__title
+					font-size: 16px
+					line-height: 20px				
+				.playlist-image__item
+					width: 100%
+					height: auto
+					min-width: 288px
+					min-height: 150px
+
+
+@media only screen and (max-width : 320px)
+	.videoplayer
+		.videoplayer__playlist
+			.playlist-item
+				.playlist-image__item
+					width: 288px
+					height: 150px
+
