@@ -1,0 +1,167 @@
+.gallery-small__wrapper, .gallery-medium__wrapper
+	-ms-overflow-style: none
+	scrollbar-width: none
+
+.gallery-small__wrapper::-webkit-scrollbar, .gallery-medium__wrapper::-webkit-scrollbar
+	display: none
+
+.gallery-small
+	width: 100%
+	overflow: hidden
+
+	.gallery-small__wrapper
+		display: flex
+		overflow: auto
+
+		.gallery-small__item
+			margin-right: 40px	
+			cursor: pointer
+
+			.gallery-small__description
+				padding-bottom: 4px
+
+				.small-item__title
+					font-weight: 700
+					margin: 8px 0 6px
+					font-size: 16px
+					line-height: 20px
+					color: #19202C
+
+				.small-item__text
+					display: flex
+					justify-content: space-between
+					color: #C2C2C2
+					font-size: 13px
+					line-height: 16px
+					margin: 0
+
+			.gallery-small__thumbnail
+				position: relative
+				overflow: hidden
+				border-radius: 14px
+
+				.gallery-small__duration
+					position: absolute
+					right: 10px
+					bottom: 10px
+					background: rgba(0, 0, 0, 0.3)	
+					padding: 3px 10px 3px 8px
+					font-size: 14px
+					line-height: 18px
+					color: #ffffff
+					border-radius: 12px
+					
+				.gallery-small__image
+					display: block
+					transition: .1s all
+					object-fit: cover
+
+.gallery-medium
+	overflow: hidden
+	padding: 50px 0
+
+	.gallery-medium__wrapper
+		display: flex
+		overflow: auto
+
+		.gallery-medium__item
+			margin-right: 40px
+			cursor: pointer
+
+			.gallery-medium__thumbnail
+				position: relative
+				overflow: hidden
+				border-radius: 14px
+
+				.gallery-medium__image
+					transition: .2s all
+
+			.medium-item__title
+				font-weight: 700
+				font-size: 16px
+				line-height: 20px
+				color: #19202C
+				margin: 10px 0 5px 0
+
+			.medium-item__text
+				display: flex
+				justify-content: space-between
+				font-weight: 400
+				font-size: 12px
+				line-height: 15px
+				color: #C2C2C2
+				margin: 0
+
+				.medium-text__wrapper
+					width: 155px
+					display: flex
+					justify-content: space-between
+					align-items: center
+					margin: 0
+
+			.gallery-medium__duration
+				position: absolute
+				bottom: 10px
+				right: 10px
+				padding: 3px 9px
+				background: #000000
+				mix-blend-mode: normal
+				opacity: 0.3
+				border-radius: 12px		
+				color: #ffffff 		
+
+.gallery-header
+	display: flex
+	align-items: flex-end
+	padding-right: 150px
+	margin: 0 0 30px 0 
+	position: relative
+	justify-content: space-between
+
+	.gallery-header_right, 
+	.gallery-header_left
+		display: flex
+		align-items: center
+
+	.gallery-header_right
+		.gallery-navigation
+			margin-left: 40px 
+
+	.gallery-header__image
+		margin-right: 20px
+
+	.gallery-header__image.gallery-img_small
+		width: 50px
+		height: 50px
+
+	.gallery-header__title
+		font-weight: 700
+		font-size: 26px
+		line-height: 33px
+		color: #19202C
+		margin: 0
+
+	.gallery-header__text
+		margin: 0 0 0 20px 
+		font-weight: 400
+		font-size: 16px
+		line-height: 24px
+		color: #C2C2C2
+
+	.gallery-navigation
+		width: 66px
+		height: 28px
+		display: flex
+		justify-content: space-between
+
+		.gallery-navigation__item
+			cursor: pointer
+			height: 28px
+			width: 28px
+			border-radius: 50%
+			background: #B7B7B7
+			display: flex
+			align-items: center
+			justify-content: center
+			overflow: hidden
+			transition: .1s all

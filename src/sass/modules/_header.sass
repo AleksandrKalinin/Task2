@@ -1,0 +1,76 @@
+.header
+	padding: 20px 70px 30px 30px
+	background: transparent
+	display: flex
+	align-items: center
+
+	.mobile-nav
+		display: none
+
+	.mobile-title
+		font-size: 16px
+		line-height: 20px
+		font-weight: 700
+		margin-left: 5px	
+		display: none	
+
+.search
+	position: relative
+
+	.search-input
+		border: none
+		outline: none
+		width: 830px
+		height: 44px
+		background: #EBEBEB	 
+		border-radius: 22px	
+		padding: 0 35px 0 23px
+
+	.search-icon
+		position: absolute
+		right: 13px
+		top: 13px
+
+.logo 
+	margin-left: 28px
+	margin-right: 60px
+	display: flex
+
+	.logo-button
+		margin-right: 4px
+
+	.logo-text
+		width: 100px
+		height: 23px
+
+.top-navigation
+	display: flex
+	justify-content: space-between
+	width: 175px
+	margin-right: 45px
+	margin-left: 505px
+
+	.top-navigation__item
+		position: relative
+		cursor: pointer	
+		transition: .1s all
+
+		.top-navigation__alert
+			font-size: 12px
+			width: 18px
+			height: 18px
+			border-radius: 50%
+			background: $red-color
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #FFFFFF
+			position: absolute
+			top: -5px
+			left: 50%
+			
+	.top-navigation__item:hover
+		transform: scale(1.04)
+
+.top-userpic
+	cursor: pointer
