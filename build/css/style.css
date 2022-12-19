@@ -1392,7 +1392,9 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 78px; } }
+    width: 78px; }
+  .main {
+    padding-top: 55px; } }
 
 @media only screen and (max-width: 480px) {
   .switch {
