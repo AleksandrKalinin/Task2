@@ -23,7 +23,7 @@
 				left: 0
 				display: flex
 				flex-direction: column
-				padding: 0 33px 20px 33px
+				padding: 0 31px 20px 31px
 
 				.videoplayer-time
 					width: 100%
@@ -35,7 +35,7 @@
 
 				.videoplayer-progress
 					width: 100%
-					padding: 20px 0
+					padding: 20px 0 20px 0
 
 					.videoplayer-progress_left,
 					.videoplayer-progress_right
@@ -47,7 +47,10 @@
 						padding: 0 6px
 
 				.videoplayer-controls
-					width: 100%
+					position: relative
+					top: -5px
+					width: calc(100% - 15px)
+					margin: 0 auto
 					display: flex
 					justify-content: space-between
 
@@ -58,6 +61,8 @@
 
 					.videoplayer-controls__item
 						cursor: pointer
+						img
+							display: block
 
 					.videoplayer-controls_left
 						.videoplayer-controls__item:not(:last-child)

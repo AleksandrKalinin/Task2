@@ -18,7 +18,7 @@
 			cursor: pointer
 
 			.gallery-small__description
-				padding-bottom: 4px
+				padding-bottom: 0
 
 				.small-item__title
 					font-weight: 700
@@ -75,6 +75,7 @@
 
 				.gallery-medium__image
 					transition: .2s all
+					display: block
 
 			.medium-item__title
 				font-weight: 700
@@ -112,7 +113,7 @@
 .gallery-header
 	display: flex
 	align-items: flex-end
-	padding-right: 9.186%
+	padding-right: calc(9.186% - 17px)
 	margin: 0 0 30px 0 
 	position: relative
 	justify-content: space-between
@@ -123,6 +124,7 @@
 		align-items: center
 
 	.gallery-header_right
+		margin-top: 14px
 		.gallery-navigation
 			margin-left: 40px 
 
@@ -134,6 +136,7 @@
 		height: 50px
 
 	.gallery-header__title
+		padding-left: 5px
 		font-weight: 700
 		font-size: 26px
 		line-height: 33px
