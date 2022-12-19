@@ -690,13 +690,21 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
+.gallery-small__wrapper, .gallery-medium__wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+
+.gallery-small__wrapper::-webkit-scrollbar, .gallery-medium__wrapper::-webkit-scrollbar {
+  display: none; }
+
 .gallery-small {
   width: 100%;
   overflow: hidden; }
   .gallery-small .gallery-small__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    overflow: auto; }
     .gallery-small .gallery-small__wrapper .gallery-small__item {
       margin-right: 40px;
       cursor: pointer; }
@@ -747,7 +755,8 @@ input:checked + .slider:before {
   .gallery-medium .gallery-medium__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    overflow: auto; }
     .gallery-medium .gallery-medium__wrapper .gallery-medium__item {
       margin-right: 40px;
       cursor: pointer; }
