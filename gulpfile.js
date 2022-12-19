@@ -19,12 +19,9 @@ const jsFiles = [
 	'./src/js/main.js'
 ]
 
-//const sassFiles = ['./src/sass/**/*.sass']
-
 const sassFiles = [
 	'./src/sass/main.sass',
 	'./src/sass/media.sass'
-
 ]
 
 function compile(){
