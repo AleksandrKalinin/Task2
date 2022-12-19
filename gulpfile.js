@@ -12,7 +12,7 @@ const streamqueue = require('streamqueue');
 sass.compiler = require('node-sass');
 
 const cssFiles = [
-	'./src/css/media.css'
+	'./src/css/**/*.css'
 ]
 
 const jsFiles = [
@@ -77,7 +77,7 @@ function watch(){
 			baseDir: "./"
 		}
 	})
-	gulp.watch('./src/css/**/*.css', compile)
+	//gulp.watch('./src/css/**/*.css', compile)
 	gulp.watch('./src/sass/**/*.sass', compile)
 	gulp.watch('./src/js/**/*.js', scripts)
 	gulp.watch("./*.html").on("change", browserSync.reload)

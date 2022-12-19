@@ -85,6 +85,25 @@ $red-color: #FF0000
 	.content-header
 		padding: 0 20px
 
+	.search
+		.search-input
+			width: 300px
+
+	.content
+		width: calc(100% - 192px)
+		margin: 0
+
+	.videoplayer-controls__item
+		transform: scale(1)
+
+	.header
+		padding: 20px 30px 30px 30px
+
+	.top-navigation
+		margin-left: calc(100% - 668px)	
+		margin-right: 20px
+		width: 100px
+
 	.content-player
 		width: 100%
 		padding: 0 20px
@@ -96,25 +115,6 @@ $red-color: #FF0000
 		.content-player__description
 			width: 100%
 			padding: 20px 0
-
-	.header
-		padding: 20px 30px 30px 30px
-
-	.top-navigation
-		margin-left: calc(100% - 668px)	
-		margin-right: 20px
-		width: 100px
-
-	.search
-		.search-input
-			width: 300px
-
-	.content
-		width: calc(100% - 192px)
-		margin: 0
-
-	.videoplayer-controls__item
-		transform: scale(1)
 
 @media only screen and (max-width : 992px)
 
@@ -273,14 +273,24 @@ $red-color: #FF0000
 		background: #FFFFFF
 
 	.videoplayer
+		.videoplayer-main
+			.videoplayer-info__more
+				display: block
+		.videoplayer-playlist
+			margin: 0 auto
 		.videoplayer-info
+			position: relative
 			.videoplayer-title
+				width: 210px
 				font-size: 20px
 				line-height: 25px
+				margin-top: 13px
 		.videoplayer-summary
 			border-bottom: 1px solid rgba(216, 216, 216, 0.5)
 			padding: 20px 0
 			margin-bottom: 20px
+			flex-direction: row
+			align-items: center
 			.videoplayer-button
 				font-size: 16px
 				line-height: 20px			
@@ -289,7 +299,13 @@ $red-color: #FF0000
 				color: $red-color
 				.videoplayer-button__count
 					display: none
+				&:hover
+					background: transparent	
+					color: $red-color
 			.videoplayer-description	
+				align-items: center
+				.videoplayer-button
+					align-self: start
 				.videoplayer-description__date
 					display: none
 				.videoplayer-description__more
