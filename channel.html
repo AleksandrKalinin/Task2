@@ -49,7 +49,7 @@
 		</div>
 	</header>
 	<section class="main">
-		<div class="sidebar">
+		<nav class="sidebar">
 			<div class="sidebar__wrapper">
 				<div class="sidebar__categories categories">
 					<div class="categories__item categories-item categories-item_active">
@@ -129,7 +129,7 @@
 				<img class="sidebar-settings__image" src="build/images/sidebar/settings.png">
 				<p class="sidebar-settings__text">Settings</p>				
 			</div>
-		</div>
+		</nav>
 		<div class="content content_full">
 			<div class="content-top">
 				<img class="content-top__image" src="build/images/channel-bg.png">
@@ -151,16 +151,18 @@
 			</div>
 			<div class="content-main">
 				<div class="content-main__wrapper content-wrapper">
-					<ul class="content-navigation">
-						<li class="content-navigation__item nav-item nav-item_active"><a class="nav-item__link" href="home.html">Home</a></li>
-						<li class="content-navigation__item nav-item"><a class="nav-item__link" href="video.html">Videos</a></li>
-						<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">Playlists</a></li>
-						<li class="content-navigation__item nav-item nav-item_more"><a class="nav-item__link" href=""><img class="nav-item__icon" src="build/images/rightArrow.png"></a></li>						
-						<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">Channels</a></li>
-						<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">Discussion</a></li>
-						<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">About</a></li>
-						<li class="content-navigation__item nav-item"><a class="nav-item__link" href=""><img class="nav-item__icon" src="build/images/search.png"></a></li>
-					</ul>
+					<nav class="content-wrapper__menu content-menu">
+						<ul class="content-menu__list content-navigation">
+							<li class="content-navigation__item nav-item nav-item_active"><a class="nav-item__link" href="home.html">Home</a></li>
+							<li class="content-navigation__item nav-item"><a class="nav-item__link" href="video.html">Videos</a></li>
+							<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">Playlists</a></li>
+							<li class="content-navigation__item nav-item nav-item_more"><a class="nav-item__link" href=""><img class="nav-item__icon" src="build/images/rightArrow.png"></a></li>						
+							<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">Channels</a></li>
+							<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">Discussion</a></li>
+							<li class="content-navigation__item nav-item"><a class="nav-item__link" href="">About</a></li>
+							<li class="content-navigation__item nav-item"><a class="nav-item__link" href=""><img class="nav-item__icon" src="build/images/search.png"></a></li>
+						</ul>
+					</nav>
 					<div class="content-player player">
 						<div class="content-player__image player-image">
 							<img class="player-image__pic" src="build/images/channel-video.png">
@@ -173,7 +175,7 @@
 						</div>
 					</div>					
 				</div>
-				<div class="content-main__recommended recommended">
+				<nav class="content-main__recommended recommended">
 					<h6 class="recommended__title">Recommended channels</h6>
 					<div class="recommended__item recommended-item">
 						<img class="recommended-item__image" src="build/images/recommended/medium-1.png">
@@ -187,7 +189,7 @@
 						<img class="recommended-item__image" src="build/images/recommended/medium-3.png">
 						<p class="recommended-item__name">Philip Mulins</p>
 					</div>										
-				</div>
+				</nav>
 			</div>
 			<div class="gallery-small">
 				<div class="gallery-header">
@@ -196,8 +198,8 @@
 					</div>
 					<div class="gallery-header_right">
 						<div class="gallery-navigation">
-							<a class="gallery-navigation__item" href=""><img src="build/images/left.png"></a>
-							<a class="gallery-navigation__item" href=""><img src="build/images/right.png"></a>
+							<span class="gallery-navigation__item"><img src="build/images/left.png"></span>
+							<span class="gallery-navigation__item"><img src="build/images/right.png"></span>
 						</div>						
 					</div>
 				</div>

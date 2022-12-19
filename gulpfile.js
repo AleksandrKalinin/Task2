@@ -20,27 +20,20 @@ const jsFiles = [
 ]
 
 const sassFiles = [
-	'./src/sass/main.sass',
-	'./src/sass/media.sass'
+	'./src/sass/**/*.sass'
 ]
 
 function compile(){
-   // var sassStream,cssStream;
-
     return streamqueue({ objectMode: true },
             gulp.src(sassFiles).pipe(sass()),
             gulp.src(cssFiles)
         )
-        .pipe(concat('style.css')) 
-		.pipe(autoprefixer({
-			cascade: false
-		}))
-
-/*		.pipe(cleanCSS({
-			level: 2
-		})) */
-	    .pipe(gulp.dest('./build/css'))
-	    .pipe(browserSync.stream())
+			.pipe(concat('style.css')) 
+			.pipe(autoprefixer({
+				cascade: false
+			}))
+			.pipe(gulp.dest('./build/css'))
+			.pipe(browserSync.stream())
 }
 
 function styles(){
@@ -49,10 +42,6 @@ function styles(){
 		.pipe(autoprefixer({
 			cascade: false
 		}))
-
-/*		.pipe(cleanCSS({
-			level: 2
-		})) */
 		.pipe(gulp.dest('./build/css'))
 		.pipe(browserSync.stream())
 }
@@ -77,7 +66,6 @@ function watch(){
 			baseDir: "./"
 		}
 	})
-	//gulp.watch('./src/css/**/*.css', compile)
 	gulp.watch('./src/sass/**/*.sass', compile)
 	gulp.watch('./src/js/**/*.js', scripts)
 	gulp.watch("./*.html").on("change", browserSync.reload)
