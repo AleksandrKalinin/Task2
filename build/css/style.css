@@ -111,9 +111,8 @@
         bottom: 10px;
         right: 10px;
         padding: 3px 9px;
-        background: #000000;
+        background: rgba(0, 0, 0, 0.3);
         mix-blend-mode: normal;
-        opacity: 0.3;
         border-radius: 12px;
         color: #ffffff; }
 
@@ -358,6 +357,13 @@ input:checked + .slider:before {
 
 .search {
   position: relative; }
+  .search .search-icon__wrap {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    width: 19px;
+    height: 19px;
+    background: url("../../build/images/search.svg"); }
   .search .search-input {
     border: none;
     outline: none;
@@ -418,10 +424,6 @@ input:checked + .slider:before {
       position: absolute;
       top: -5px;
       left: 50%; }
-  .top-navigation .top-navigation__item:hover {
-    -webkit-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    transform: scale(1.04); }
 
 .top-userpic {
   cursor: pointer; }
