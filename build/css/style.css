@@ -342,7 +342,11 @@ input:checked + .slider:before {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #F2F2F2; }
   .header .mobile-nav {
     display: none; }
   .header .mobile-title {
@@ -740,7 +744,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Mulish', sans-serif;
-  background: #F2F2F2; }
+  background: #F2F2F2;
+  position: relative; }
 
 .section-home {
   padding-top: 20px; }
