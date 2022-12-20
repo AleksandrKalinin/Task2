@@ -11,10 +11,6 @@ const streamqueue = require('streamqueue');
  
 sass.compiler = require('node-sass');
 
-const cssFiles = [
-	'./src/css/**/*.css'
-]
-
 const jsFiles = [
 	'./src/js/main.js'
 ]
@@ -26,8 +22,7 @@ const sassFiles = [
 
 function compile(){
     return streamqueue({ objectMode: true },
-            gulp.src(sassFiles).pipe(sass()),
-            gulp.src(cssFiles)
+            gulp.src(sassFiles).pipe(sass())
         )
 			.pipe(concat('style.css')) 
 			.pipe(autoprefixer({
