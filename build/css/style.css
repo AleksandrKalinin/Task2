@@ -202,11 +202,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
   .toggle .switch-text {
     font-size: 16px;
+    font-weight: 800;
     line-height: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -288,7 +289,7 @@ input:checked + .slider:before {
   display: flex;
   cursor: pointer;
   margin-left: 2px;
-  margin-top: 80px; }
+  margin-top: 79px; }
   .sidebar-settings .sidebar-settings__image {
     margin-right: 12px; }
   .sidebar-settings .sidebar-settings__text {
@@ -296,7 +297,8 @@ input:checked + .slider:before {
     margin: 0; }
 
 .subscriptions {
-  width: 160px; }
+  width: 160px;
+  margin-left: -2px; }
   .subscriptions .subscriptions-header {
     font-size: 18px;
     line-height: 23px;
@@ -458,11 +460,11 @@ input:checked + .slider:before {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  width: 185px;
-  margin-right: 45px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 175px;
+  margin-riht: 45px;
   margin-left: 505px; }
   .top-navigation .top-navigation__item {
     position: relative;
@@ -523,7 +525,7 @@ input:checked + .slider:before {
   .recommended .recommended-item .recommended-item__name {
     font-size: 18px;
     line-height: 23px;
-    font-weight: 700;
+    font-weight: 800;
     color: #19202C;
     margin: 0; }
 
@@ -840,7 +842,7 @@ body {
   padding-bottom: 41px; }
 
 .main-channel {
-  padding-bottom: 33px; }
+  padding-bottom: 37px; }
 
 .content {
   margin: 0 70px 0 65px;
@@ -883,6 +885,8 @@ body {
     align-items: center; }
     .content-header .content-info .info-userpic {
       margin-right: 14px; }
+      .content-header .content-info .info-userpic .info-userpic__image {
+        display: block; }
     .content-header .content-info .info-description {
       padding: 15px 0; }
     .content-header .content-info .info-description__title {
