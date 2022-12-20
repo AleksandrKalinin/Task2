@@ -495,7 +495,8 @@ input:checked + .slider:before {
       left: 50%; }
 
 .top-userpic {
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 50px; }
   .top-userpic img {
     display: block; }
 
@@ -1017,7 +1018,7 @@ body {
     .content-player .content-player__description {
       width: calc(100% - 540px); }
   .top-navigation {
-    margin-left: calc(100% - 1313px); }
+    margin-left: calc(100% - 1298px); }
   .content {
     width: calc(100% - 315px); }
   .main-home .content.content_full {
