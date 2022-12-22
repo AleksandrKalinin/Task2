@@ -1,0 +1,256 @@
+.videoplayer
+	display: flex
+	margin: 0 53px 0 80px
+	padding-top: 94px
+
+	.videoplayer-main
+		.videoplayer-info__more
+			position: absolute
+			top: 13px
+			right: 20px
+			cursor: pointer
+			display: none
+			img
+				display: block
+
+		.videoplayer-img
+			position: relative
+
+			.videoplayer-navigation
+				width: 100%
+				position: absolute
+				bottom: 0
+				left: 0
+				display: flex
+				flex-direction: column
+				padding: 0 31px 20px 31px
+
+				.videoplayer-time
+					width: 100%
+					display: flex
+					justify-content: space-between
+					color: white
+					font-size: 22px
+					line-height: 28px
+
+				.videoplayer-progress
+					width: 100%
+					padding: 20px 0 20px 0
+
+					.videoplayer-progress_left,
+					.videoplayer-progress_right
+						display: none
+
+					.videoplayer-progress__image
+						width: 100%
+						object-fit: cover
+						padding: 0 6px
+
+				.videoplayer-controls
+					position: relative
+					top: -7px
+					width: calc(100% - 15px)
+					margin: 0 auto
+					display: flex
+					justify-content: space-between
+
+					.videoplayer-controls_left,
+					.videoplayer-controls_right
+						display: flex
+						align-items: center
+
+					.videoplayer-controls__item
+						cursor: pointer
+						img
+							display: block
+
+					.videoplayer-controls_left
+						.videoplayer-controls__item:not(:last-child)
+							margin-right: 40px
+
+					.videoplayer-controls_right
+						.videoplayer-controls__item:not(:last-child)
+							margin-right: 27px
+
+		.videoplayer-img__item
+			display: block
+
+	.videoplayer-title
+		font-weight: 700
+		font-size: 36px
+		line-height: 45px
+		color: #192646	
+		margin: 20px 0 0 0
+
+	.videoplayer-navigation	
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		padding-bottom: 17px
+
+		.videoplayer-navigation__wrapper
+			display: flex
+			align-items: center
+
+		.videoplayer-navigation__text
+			font-weight: 400
+			font-size: 20px
+			line-height: 25px
+			color: #C2C2C2
+
+		.videoplayer-buttons
+			width: 320px
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			.video-button
+				display: flex
+				align-items: center
+				justify-content: space-between
+				width: 100px
+				height: 40px
+				border-radius: 20px
+				background: #EBEBEB
+				text-decoration: none
+				padding: 10px 20px
+				font-size: 16px
+				line-height: 20px
+				color: #192646
+				transition: .2s all
+				cursor: pointer
+				&:hover
+					background: #D8D8D8	
+
+		.videoplayer-more
+			text-decoration: none
+			margin-left: 40px
+
+	.videoplayer-summary
+		border-top: 1px solid rgba(216, 216, 216, 0.5)
+		display: flex
+		justify-content: space-between
+		padding: 37px 0 48px
+
+		.videoplayer-description
+			display: flex
+
+			.videoplayer-description__text
+				width: 820px
+				margin-left: 12px
+
+				.videoplayer-description__category
+					margin: 0 0 4px 0 
+					font-weight: 700
+					font-size: 26px
+					line-height: 33px
+					color: #19202C
+
+				.videoplayer-description__date,
+				.videoplayer-description__views
+					font-weight: 400
+					font-size: 13px
+					line-height: 16px
+					color: #C2C2C2	
+
+				.videoplayer-description__views
+					display: none
+
+				.videoplayer-description__summary
+					margin: 12px 0 14px 0
+					font-size: 16px
+					line-height: 22px
+					color: #000000
+					mix-blend-mode: normal
+					opacity: 0.6
+
+				.videoplayer-description__more
+					font-weight: 400
+					font-size: 20px
+					line-height: 25px
+					color: #C2C2C2	
+					cursor: pointer
+					transform: .1s all
+
+				.videoplayer-description__more:hover
+					text-decoration: underline
+
+		.videoplayer-button
+			flex-shrink: 0
+			background: $red-color
+			padding: 10px 20px			
+			border-radius: 20px
+			color: #fff
+			text-decoration: none
+			cursor: pointer
+			transition: .2s ease
+			align-self: start
+
+		.videoplayer-button:hover
+			background: #FF3838
+			color: #ffffff
+	
+	.videoplayer-playlist
+		margin-left: 40px
+		max-height: 1100px
+		overflow-y: auto
+
+		.playlist-header
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin: 0 0 25px 0
+
+			.playlist-header__title
+				font-size: 36px
+				line-height: 45px
+				color: #19202C
+				margin: 0
+
+		.playlist-item
+			margin-bottom: 23px
+
+			.playlist-item__image
+				margin: 0
+				position: relative
+				vertical-align: top
+
+				.playlist-image__item
+					display: block
+
+				.playlist-item__duration
+					position: absolute
+					right: 10px
+					bottom: 10px
+					background: #000000
+					opacity: 0.3
+					border-radius: 12px	
+					padding: 3px 10px 3px 8px
+					font-size: 14px
+					line-height: 18px
+					text-align: right
+					color: #FFFFFF
+
+			.playlist-item__description
+				margin-top: 13px
+
+			.playlist-item__title
+				font-size: 26px
+				line-height: 33px
+				color: #19202C
+				margin: 0 0 11px 0
+				
+			.playlist-item__text
+				display: flex
+				justify-content: space-between
+				font-size: 18px
+				line-height: 23px
+				color: #C2C2C2
+				margin: 0
+
+.videoplayer-playlist
+	-ms-overflow-style: none
+	scrollbar-width: none
+
+.videoplayer-playlist::-webkit-scrollbar
+	display: none						

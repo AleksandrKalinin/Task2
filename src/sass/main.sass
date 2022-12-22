@@ -1,0 +1,177 @@
+$red-color: #FF0000
+
+@import 'modules/_galleries'
+@import 'modules/_toggle'
+@import 'modules/_sidebar'
+@import 'modules/_header'
+@import 'modules/_recommended'
+@import 'modules/_videoplayer'
+@import 'modules/_button-regular'
+
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	padding: 0
+	font-family: 'Mulish', sans-serif
+	background: #FFFFFF
+	position: relative
+	overflow: auto
+
+.section-home
+	padding-top: 20px
+
+.main
+	display: flex
+	width: 100%
+	position: relative
+	padding-top: 94px
+
+.main-home
+	padding-bottom: 41px
+
+.main-channel
+	padding-bottom: 37px	
+
+.content
+	margin: 0 70px 0 65px
+	width: 1598px
+
+	.content-top
+		.content-top__image
+			width: 100%
+			min-height: 100px
+			display: block
+
+.content-main
+	display: flex
+
+	.content-navigation
+		display: flex
+		margin: 0
+		padding: 0
+		list-style: none
+
+.content-header
+	margin: 30px 0 20px 0
+	width: calc(100% - 55px)
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+
+	.content-info
+		display: flex
+		align-items: center
+
+		.info-userpic
+			margin-right: 14px
+
+		.info-description
+			padding: 15px 0
+
+		.info-description__title
+			font-size: 26px
+			line-height: 33px
+			color: #19202C
+			margin: 0
+
+		.info-description__text
+			font-size: 13px
+			line-height: 16px
+			color: #C2C2C2
+			margin: 0
+
+	.content-subscribe
+		display: flex
+
+		.content-subscribe__icon
+			align-self: center
+			margin-right: 20px
+
+.content-player
+	display: flex
+	margin: 60px 205px 60px 0
+
+	.player-image
+		.player-image__pic
+			display: block
+
+	.player-description
+		width: 580px
+		padding: 17px 0 15px 32px
+
+		.player-title
+			margin: 0 0 10px 0
+			font-size: 26px
+			line-height: 34px
+			color: #19202C
+			max-width: 430px
+
+		.player-text
+			margin: 0 0 30px 0
+			font-size: 16px
+			line-height: 22px
+			color: #000000
+			mix-blend-mode: normal
+			opacity: 0.6
+
+		.player-info
+			font-size: 16px
+			line-height: 22px
+			color: #C2C2C2
+			margin: 0
+			display: flex
+			align-items: center
+
+		.divider
+			display: flex
+			align-items: center
+			height: 100%
+			align-self: center
+			padding: 0 10px	
+
+.content-navigation
+	display: flex
+	align-items: center
+
+	.nav-item
+		margin-right: 70px
+
+		.nav-item__link
+			font-size: 18px
+			line-height: 23px
+			color: #000000
+			text-decoration: none
+			display: flex
+			align-items: center
+			transition: .1s all
+			border-bottom: 2px solid transparent
+
+	.nav-item:not(:last-child):hover
+		.nav-item__link
+			color: $red-color
+			border-bottom: 2px solid $red-color
+			border-radius: 1px
+
+	.nav-item.nav-item_active
+		.nav-item__link
+			color: $red-color
+			border-bottom: 2px solid $red-color
+			border-radius: 1px
+			padding-bottom: 2px
+			font-weight: 700
+
+	.nav-item.nav-item_more
+		display: none
+
+.profile-image
+	display: block
+
+.profile-image_small
+	width: 50px
+	width: 50px
+
+.profile-image_medium
+	width: 80px
+	height: 80px	

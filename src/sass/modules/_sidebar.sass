@@ -1,0 +1,107 @@
+.sidebar
+	margin-left: 32px
+	padding:  20px 0 0 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	line-height: 20px
+	font-size: 16px		
+
+.sidebar-settings
+	display: flex
+	cursor: pointer
+	margin-left: 2px
+	margin-top: 79px
+
+	.sidebar-settings__image
+		margin-right: 12px
+
+	.sidebar-settings__text
+		color: #C2C2C2
+		margin: 0
+
+.subscriptions
+	width: 160px
+	margin-left: -2px
+
+	.subscriptions-header
+		font-size: 18px		
+		line-height: 23px
+		margin: 0 0 30px 0
+		font-weight: 700
+
+	.subscriptions-item
+		display: flex
+		align-items: center	
+		margin-bottom: 23px
+		cursor: pointer
+		transition: .1s all
+
+		.subscriptions-item__image
+		 	margin-right: 10px
+
+		.subscriptions-item__text
+			color: #898989
+			margin: 0
+
+
+.categories
+	width: 135px
+
+	.categories-item
+		display: flex
+		align-items: center	
+		margin-bottom: 29px
+		cursor: pointer
+		transition: .1s all
+
+		.categories-item__image
+		 	margin-right: 15px
+
+		.categories-item__text
+			color: #898989
+			margin: 0
+			line-height: 20px
+			font-size: 16px
+
+	.categories-item.categories-item_active
+		.categories-item__text
+			color: $red-color
+			
+	.categories-item.categories-item_spaced
+		margin-bottom: 58px
+
+.sidebar-mobile
+	display: none
+	justify-content: center	
+	background: #FFFFFF
+	border-top: 1px solid #F1F1F1
+	position: fixed
+	bottom: 0
+	left: 0	
+	z-index: 1	
+	width: 100%
+	height: 61px
+	margin: 0
+	padding: 0
+	justify-content: space-between
+	align-items: center
+
+	.sidebar-mobile__item	
+		display: flex 		
+		flex-direction: column
+		justify-content: center
+		align-items: center	
+		width: auto	
+		margin: 0
+		width: 100px
+		min-width: 25%	
+		height: 37px
+
+		.mobile-item__image
+			margin: 0 0 7px 0
+
+		.mobile-item__text
+			margin: 0
+			font-size: 10px
+			line-height: 13px			
