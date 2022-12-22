@@ -836,6 +836,7 @@ input:checked + .slider:before {
 
 .button-regular {
   background: #FF0000;
+  text-align: center;
   padding: 10px 20px;
   border-radius: 20px;
   color: #fff;
@@ -1113,7 +1114,7 @@ body {
   .header {
     padding: 20px 30px 30px 30px; }
   .top-navigation {
-    margin-left: calc(100% - 668px);
+    margin-left: calc(100% - 728px);
     margin-right: 20px;
     width: 100px; }
   .content-player {
@@ -1171,6 +1172,12 @@ body {
       display: none; }
     .gallery-header .gallery-header__text {
       display: none; }
+  .content-subscribe .button-regular {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 17px 9px 17px;
+    width: 120px;
+    height: 34px; }
   .content-main .content-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1244,8 +1251,6 @@ body {
     display: none; }
   .search {
     display: none; }
-  body {
-    background: #F2F2F2; }
   .videoplayer .videoplayer-main .videoplayer-img .videoplayer-navigation {
     bottom: 8px;
     background: transparent;
@@ -1464,14 +1469,82 @@ body {
     padding-top: 55px; } }
 
 @media only screen and (max-width: 480px) {
+  .header {
+    padding: 12px 20px 23px 16px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .header .top-userpic img {
+      height: 30px;
+      width: 30px; }
+    .header .logo.logo-channel {
+      margin-right: calc(100% - 242px); }
+    .header .logo.logo-video {
+      margin-right: calc(100% - 185px); }
+    .header .logo.logo-home {
+      margin-right: calc(100% - 184px); }
+    .header .mobile-nav {
+      width: 69px; }
+      .header .mobile-nav img {
+        display: block; }
+  .header.header-home {
+    padding: 10px 20px 20px 16px; }
+    .header.header-home .top-userpic {
+      margin-left: 0; }
+  .info-userpic__image {
+    width: 70px;
+    height: 70px; }
+  .content-subscribe .button-regular {
+    width: 120px; }
+  .content-header .content-info .info-description {
+    padding-top: 2px;
+    padding-bottom: 20px; }
+  .content-main {
+    margin-top: -10px; }
+    .content-main .content-navigation {
+      padding-bottom: 16px; }
+  .main-home .content.content_full {
+    margin-top: 0; }
   .videoplayer {
-    margin: 0 16px; }
+    margin: 0;
+    padding-top: 60px; }
+    .videoplayer .videoplayer-main .videoplayer-img .videoplayer-navigation .videoplayer-progress {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .videoplayer .videoplayer-main .videoplayer-img .videoplayer-navigation .videoplayer-progress .videoplayer-progress__image {
+        width: calc(100% - 118px); }
+      .videoplayer .videoplayer-main .videoplayer-img .videoplayer-navigation .videoplayer-progress .videoplayer-progress__time {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 10px;
+        line-height: 12.5px; }
+    .videoplayer .videoplayer-info {
+      padding: 0 16px; }
+      .videoplayer .videoplayer-info .videoplayer-title {
+        margin-bottom: 4px; }
+    .videoplayer .videoplayer-summary {
+      padding: 20px 16px; }
+      .videoplayer .videoplayer-summary .videoplayer-button {
+        -ms-flex-item-align: center;
+        align-self: center; }
+    .videoplayer .videoplayer-navigation__wrapper {
+      width: 100%; }
+      .videoplayer .videoplayer-navigation__wrapper .videoplayer-navigation__buttons .videoplayer-buttons__item {
+        min-width: 100px; }
     .videoplayer .videoplayer__playlist {
       margin: 0;
-      width: 100%; }
-      .videoplayer .videoplayer__playlist .playlist-header .playlist-header__title {
-        font-size: 20px;
-        line-height: 25px; }
+      width: 100%;
+      padding: 0 16px; }
+      .videoplayer .videoplayer__playlist .playlist-header {
+        margin-bottom: 13px; }
+        .videoplayer .videoplayer__playlist .playlist-header .playlist-header__title {
+          font-size: 20px;
+          line-height: 25px; }
       .videoplayer .videoplayer__playlist .playlist-item .playlist-item__views,
       .videoplayer .videoplayer__playlist .playlist-item .playlist-item__author {
         font-size: 13px;

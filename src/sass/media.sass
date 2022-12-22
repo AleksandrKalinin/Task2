@@ -7,8 +7,10 @@ $red-color: #FF0000
 			max-width: 1363px
 			width: calc(100% - 394px)
 			overflow: hidden
+
 			.videoplayer-img
 				width: 100%
+
 				.videoplayer-img__item
 					width: 100%
 					height: auto
@@ -21,10 +23,12 @@ $red-color: #FF0000
 		.content-player__image
 			width: calc(1120px / 2 - 20px)
 			overflow: hidden
+
 			.player-image__pic
 				width: 100%
 				height: auto
 				object-fit: cover
+
 		.content-player__description
 			width: calc(1120px / 2  + 20px)
 
@@ -58,13 +62,16 @@ $red-color: #FF0000
 
 	.content-player
 		margin: 60px 60px 60px 0
+
 		.content-player__image
 			width: 340px
+
 		.content-player__description
 			width: calc(100% - 372px)
 
 	.gallery-header
 		padding-right: 5px
+
 		.gallery-header_right
 			.gallery-navigation
 				margin-left: 20px
@@ -105,7 +112,7 @@ $red-color: #FF0000
 		padding: 20px 30px 30px 30px
 
 	.top-navigation
-		margin-left: calc(100% - 668px)	
+		margin-left: calc(100% - 728px)	
 		margin-right: 20px
 		width: 100px
 
@@ -115,8 +122,10 @@ $red-color: #FF0000
 		flex-direction: column
 		align-items: center
 		margin: 60px auto
+
 		.content-player__image
 			width: 100%
+
 		.content-player__description
 			width: 100%
 			padding: 20px 0
@@ -125,8 +134,10 @@ $red-color: #FF0000
 
 	.videoplayer
 		flex-direction: column
+
 		.videoplayer__main
 			width: 100%
+
 		.videoplayer__playlist
 			margin: 0
 			max-width: 367px	
@@ -136,6 +147,7 @@ $red-color: #FF0000
 			width: 100%
 			flex-wrap: wrap
 			justify-content: space-around
+
 			.gallery-small__item
 				margin: 0 0 30px 0
 				margin-right: 0
@@ -145,6 +157,7 @@ $red-color: #FF0000
 			width: 100%
 			flex-wrap: wrap
 			justify-content: space-around
+
 			.gallery-medium__item
 				margin: 0 0 30px 0
 				width: 500px
@@ -152,23 +165,37 @@ $red-color: #FF0000
 	.gallery-header
 		padding: 0
 		justify-content: space-between
+
 		.gallery-navigation
 			display: none	
+
 		.gallery-header__text
 			display: none	
+
+	.content-subscribe
+		.button-regular
+			font-size: 12px
+			line-height: 15px
+			padding: 10px 17px 9px 17px
+			width: 120px
+			height: 34px
 
 	.content-main
 		.content-navigation
 			display: flex
 			padding: 0 16px 16px 
 			margin: 0 auto
+
 			.nav-item
 				margin-right: 40px
+
 				.nav-item__link
 					font-size: 14px
 					line-height: 18px
+
 			.nav-item.nav-item_more
-				display: flex		
+				display: flex
+
 		.content-navigation .nav-item:nth-child(n+5):nth-last-child(n+1)	
 			background: red
 			display: none	
@@ -178,9 +205,11 @@ $red-color: #FF0000
 	.content__header
 		flex-direction: column
 		align-items: flex-start
+
 		.content-info
 			flex-direction: column
 			align-items: flex-start
+
 		.content-subscribe	
 			.content-subscribe__icon
 				display: none	
@@ -189,6 +218,7 @@ $red-color: #FF0000
 		padding: 10px 16px 20px
 		width: 100%
 		justify-content: space-between
+
 		.logo
 			margin: 0
 
@@ -198,12 +228,16 @@ $red-color: #FF0000
 	.gallery-medium
 		padding: 20px
 		width: 100%
+
 		.gallery-medium__wrapper
 			width: 100%
+
 			.gallery-medium__item
 				width: 100%
+
 				.gallery-medium__thumbnail
 					width: 100%
+
 					.gallery-medium__image
 						height: 100%
 						width: 100%
@@ -225,9 +259,6 @@ $red-color: #FF0000
 	.search
 		display: none	
 
-	body
-		background: #F2F2F2
-
 	.videoplayer
 		.videoplayer-main
 			.videoplayer-img
@@ -238,6 +269,7 @@ $red-color: #FF0000
 					height: 30px
 					display: flex
 					align-items: center
+
 					.videoplayer-progress
 						display: flex
 						justify-content: center
@@ -245,22 +277,28 @@ $red-color: #FF0000
 						background: rgba(0, 0, 0, 0.2)
 						mix-blend-mode: normal
 						border-radius: 10px
+
 						.videoplayer-progress__image
 							align-self: center
 							width: calc(100% - 165px)
+
 						.videoplayer-progress_left,
 						.videoplayer-progress_right
 							display: flex
 							color: #ffffff
 							cursor: pointer	
+
 						.videoplayer-progress_left 
 							.videoplayer-progress__control	
 								margin-right: 14px
+
 						.videoplayer-progress_right 
 							.videoplayer-progress__control
-								margin-left: 14px									
+								margin-left: 14px	
+
 					.videoplayer-time
 						display: none
+
 					.videoplayer-controls
 						display: none	
 
@@ -281,63 +319,82 @@ $red-color: #FF0000
 		.videoplayer-main
 			.videoplayer-info__more
 				display: block
+
 		.videoplayer-playlist
 			margin: 0 auto
+
 		.videoplayer-info
 			position: relative
+
 			.videoplayer-title
 				width: 210px
 				font-size: 20px
 				line-height: 25px
 				margin-top: 13px
+
 		.videoplayer-summary
 			border-bottom: 1px solid rgba(216, 216, 216, 0.5)
 			padding: 20px 0
 			margin-bottom: 20px
 			flex-direction: row
 			align-items: center
+
 			.videoplayer-button
 				font-size: 16px
 				line-height: 20px			
 				padding: 0
 				background: transparent
 				color: $red-color
+
 				.videoplayer-button__count
 					display: none
 				&:hover
 					background: transparent	
 					color: $red-color
+
 			.videoplayer-description	
 				align-items: center
+
 				.videoplayer-button
 					align-self: start
+
 				.videoplayer-description__date
 					display: none
+
 				.videoplayer-description__more
 					display: none
+
 				.videoplayer-description__image
 					height: 50px
 					width: 50px
+
 				.videoplayer-description__text
 					.videoplayer-description__views
 						display: flex
 						font-size: 12px
-						line-height: 15px					
+						line-height: 15px	
+
 					.videoplayer-description__summary
 						display: none	
+
 					.videoplayer-description__category
 						font-size: 16px
-						line-height: 20px				
+						line-height: 20px	
+
 		.videoplayer-navigation
 			flex-direction: column
+
 			.videoplayer-navigation__text
 				font-size: 12px
 				line-height: 15px
 				align-self: flex-start
+
 			.videoplayer-navigation__buttons
 				margin-top: 20px
+
 				.video-button
 					margin-right: 10px
+
 		.videoplayer-more
 			display: none												
 
@@ -349,10 +406,13 @@ $red-color: #FF0000
 	.content
 		width: 100%
 		padding-bottom: 60px
+
 		.content-player
 			display: none
+
 	.content-main
 		justify-content: center
+
 		.content-wrapper
 			overflow: hidden
 
@@ -365,13 +425,16 @@ $red-color: #FF0000
 	.gallery-small 
 		width: 288px
 		margin: 0 auto
+
 		.gallery-small__wrapper 
 			.gallery-small__item
 				margin: 0 0 30px 0
 				margin-right: 0
+
 				.gallery-small__thumbnail
 					height: 150px
 					width: 100% 
+
 					.gallery-small__image
 						height: auto
 						width: 100%
@@ -380,13 +443,16 @@ $red-color: #FF0000
 		width: 288px
 		margin: 0 auto
 		padding: 0
+
 		.gallery-medium__wrapper 
 			.gallery-medium__item
 				margin: 0 0 30px 0
 				margin-right: 0
+
 				.gallery-medium__thumbnail
 					height: 150px
-					width: 100% 
+					width: 100%
+
 					.gallery-medium__image
 						height: 100%
 						width: auto					
@@ -410,6 +476,7 @@ $red-color: #FF0000
 	.header.header-channel
 		.top-userpic, .logo-youtube
 			display: none
+
 		.mobile-title
 			display: flex
 
@@ -421,6 +488,7 @@ $red-color: #FF0000
 		.header-content_right
 			display: flex
 			align-items: center
+
 			.mobile-nav
 				width: auto
 				margin-right: 25px		
@@ -436,23 +504,115 @@ $red-color: #FF0000
 
 @media only screen and (max-width : 480px)
 
+	.header
+		padding: 12px 20px 23px 16px
+		justify-content: flex-start
+
+		.top-userpic img
+			height: 30px
+			width: 30px
+
+		.logo.logo-channel
+			margin-right: calc(100% - 242px)
+
+		.logo.logo-video
+			margin-right: calc(100% - 185px)
+
+		.logo.logo-home
+			margin-right: calc(100% - 184px)
+
+		.mobile-nav
+			width: 69px	
+			img
+				display: block
+
+	.header.header-home
+		padding: 10px 20px 20px 16px
+
+		.top-userpic
+			margin-left: 0
+
+	.info-userpic__image
+		width: 70px
+		height: 70px
+
+	.content-subscribe
+		.button-regular
+			width: 120px
+
+	.content-header .content-info .info-description
+		padding-top: 2px	
+		padding-bottom: 20px
+
+	.content-main 
+		margin-top: -10px
+		.content-navigation
+			padding-bottom: 16px
+
+	.main-home
+		.content.content_full
+			margin-top: 0
+
 	.videoplayer
-		margin: 0 16px
+		margin: 0
+		padding-top: 60px
+
+		.videoplayer-main 
+			.videoplayer-img 
+				.videoplayer-navigation 
+					.videoplayer-progress
+						justify-content: space-between
+
+						.videoplayer-progress__image
+							width: calc(100% - 118px)
+
+						.videoplayer-progress__time
+							display: flex
+							align-items: center
+							font-size: 10px
+							line-height: 12.5px
+
+		.videoplayer-info
+			padding: 0 16px 
+
+			.videoplayer-title
+				margin-bottom: 4px
+
+		.videoplayer-summary
+			padding: 20px 16px
+
+			.videoplayer-button
+				align-self: center
+
+		.videoplayer-navigation__wrapper	
+			width: 100%	
+
+			.videoplayer-navigation__buttons
+				.videoplayer-buttons__item
+					min-width: 100px
+
 		.videoplayer__playlist
 			margin: 0
 			width: 100%
+			padding: 0 16px
+
 			.playlist-header
+				margin-bottom: 13px
+
 				.playlist-header__title
 					font-size: 20px
-					line-height: 25px			
+					line-height: 25px	
+
 			.playlist-item
 				.playlist-item__views,
 				.playlist-item__author
 					font-size: 13px
 					line-height: 16px
+
 				.playlist-item__title
 					font-size: 16px
-					line-height: 20px				
+					line-height: 20px	
+
 				.playlist-image__item
 					width: 100%
 					height: auto
@@ -460,6 +620,7 @@ $red-color: #FF0000
 					min-height: 150px
 
 @media only screen and (max-width : 320px)
+
 	.videoplayer
 		.videoplayer__playlist
 			.playlist-item
@@ -468,5 +629,6 @@ $red-color: #FF0000
 					height: 150px
 
 @media only screen and (min-width : 1600px)
+
 	.main
 		min-height: 1104px
