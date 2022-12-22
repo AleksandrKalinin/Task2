@@ -1047,7 +1047,7 @@ body {
         object-fit: cover; }
   .content-player {
     margin: 55px 205px 53px 0;
-    max-width: 1120px; }
+    max-width: calc(100% - 105px); }
     .content-player .content-player__image {
       width: calc(1120px / 2 - 20px);
       overflow: hidden; }
