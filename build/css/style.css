@@ -267,6 +267,37 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
+@media only screen and (max-width: 480px) {
+  .switch {
+    width: 30px;
+    height: 18px;
+    margin-left: 11px; }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 1px;
+    bottom: 1px;
+    background-color: #CCCCCC;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+  input:checked + .slider:before {
+    background-color: #2196F3; }
+  input:focus + .slider {
+    -webkit-box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #2196F3; }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px); }
+  .slider.round {
+    border-radius: 18px; }
+  .toggle .switch-text {
+    font-size: 10px;
+    line-height: 13px; } }
+
 .sidebar {
   margin-left: 32px;
   padding: 20px 0 0 0;
@@ -746,7 +777,7 @@ input:checked + .slider:before {
   .videoplayer .videoplayer-playlist {
     margin-left: 40px;
     max-height: 1100px;
-    overflow: hidden; }
+    overflow-y: auto; }
     .videoplayer .videoplayer-playlist .playlist-header {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -801,6 +832,13 @@ input:checked + .slider:before {
         line-height: 23px;
         color: #C2C2C2;
         margin: 0; }
+
+.videoplayer-playlist {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+
+.videoplayer-playlist::-webkit-scrollbar {
+  display: none; }
 
 .button-regular {
   background: #FF0000;
@@ -1423,35 +1461,6 @@ body {
     padding-top: 55px; } }
 
 @media only screen and (max-width: 480px) {
-  .switch {
-    width: 30px;
-    height: 18px;
-    margin-left: 11px; }
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 1px;
-    bottom: 1px;
-    background-color: #CCCCCC;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s; }
-  input:checked + .slider:before {
-    background-color: #2196F3; }
-  input:focus + .slider {
-    -webkit-box-shadow: 0 0 1px #2196F3;
-    box-shadow: 0 0 1px #2196F3; }
-  input:checked + .slider:before {
-    -webkit-transform: translateX(12px);
-    -ms-transform: translateX(12px);
-    transform: translateX(12px); }
-  .slider.round {
-    border-radius: 18px; }
-  .toggle .switch-text {
-    font-size: 10px;
-    line-height: 13px; }
   .videoplayer {
     margin: 0 16px; }
     .videoplayer .videoplayer__playlist {

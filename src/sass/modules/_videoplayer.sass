@@ -193,7 +193,7 @@
 	.videoplayer-playlist
 		margin-left: 40px
 		max-height: 1100px
-		overflow: hidden
+		overflow-y: auto
 
 		.playlist-header
 			display: flex
@@ -247,3 +247,10 @@
 				line-height: 23px
 				color: #C2C2C2
 				margin: 0
+
+.videoplayer-playlist
+	-ms-overflow-style: none
+	scrollbar-width: none
+
+.videoplayer-playlist::-webkit-scrollbar
+	display: none						
